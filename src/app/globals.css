@@ -8,8 +8,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,4 +23,65 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Custom Animations */
+@keyframes color-wave {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 0% 100%;
+  }
+}
+
+.animate-color-wave {
+  animation: color-wave 3s ease-in-out infinite;
+}
+
+.animate-gradient-shift {
+  animation: gradient-shift 8s ease-in-out infinite;
+}
+
+/* Typing Animation */
+@keyframes typing {
+  0% {
+    max-width: 0;
+  }
+  70% {
+    max-width: 100%;
+  }
+  100% {
+    max-width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  0%, 50% {
+    border-color: rgb(0, 251, 205);
+  }
+  51%, 100% {
+    border-color: transparent;
+  }
+}
+
+.typing-animation {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 1px solid rgb(0, 251, 205);
+  white-space: nowrap;
+  max-width: 0;
+  line-height: 1.2;
+  animation: 
+    typing 4s steps(20, end) infinite,
+    blink-caret 1s step-end infinite;
 }
