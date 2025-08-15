@@ -48,8 +48,8 @@ export default function ForgotPasswordPage() {
       {/* Navigation */}
       <Navigation />
 
-      <div className="flex items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8 pt-20 sm:pt-24 md:pt-16">
-        <div className="max-w-md w-full bg-white/10 backdrop-blur-md rounded-lg shadow-xl p-6 sm:p-8 border border-white/20">
+      <div className="relative z-10 max-w-md mx-auto px-4 sm:px-6 py-20 sm:py-24 pt-24 sm:pt-28 md:pt-24">
+        <div className="w-full bg-white/10 backdrop-blur-md rounded-2xl sm:rounded-3xl shadow-xl p-6 sm:p-8 md:p-12 border border-white/20">
           <div className="text-center mb-6 sm:mb-8">
             <h1 className="text-2xl sm:text-3xl font-bold text-white mb-2">
               Reset Password
