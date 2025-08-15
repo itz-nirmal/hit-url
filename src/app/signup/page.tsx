@@ -93,13 +93,13 @@ export default function SignUpPage() {
       {/* Navigation */}
       <Navigation />
 
-      <div className="flex items-center justify-center min-h-screen px-4">
-        <div className="max-w-md w-full bg-white/10 backdrop-blur-md rounded-lg shadow-xl p-8 border border-white/20">
-          <div className="text-center mb-8">
-            <h1 className="text-3xl font-bold text-white mb-2">
+      <div className="flex items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8 pt-20 sm:pt-24 md:pt-16">
+        <div className="max-w-md w-full bg-white/10 backdrop-blur-md rounded-lg shadow-xl p-6 sm:p-8 border border-white/20">
+          <div className="text-center mb-6 sm:mb-8">
+            <h1 className="text-2xl sm:text-3xl font-bold text-white mb-2">
               Create Account
             </h1>
-            <p className="text-white/70">
+            <p className="text-sm sm:text-base text-white/70">
               Join HIT URL to monitor your websites
             </p>
           </div>

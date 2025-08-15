@@ -13,20 +13,20 @@ export default function AboutMePage() {
       <Navigation />
 
       {/* Main Content */}
-      <div className="relative z-10 max-w-5xl mx-auto px-6 py-20">
+      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 py-20 sm:py-24 pt-24 sm:pt-28 md:pt-24">
         {/* Main Card Container */}
-        <div className="bg-black/30 backdrop-blur-lg border border-[rgb(0,251,205)]/20 rounded-3xl p-8 md:p-12 shadow-2xl">
+        <div className="bg-black/30 backdrop-blur-lg border border-[rgb(0,251,205)]/20 rounded-2xl sm:rounded-3xl p-4 sm:p-8 md:p-12 shadow-2xl">
           {/* Header Section */}
-          <div className="text-center mb-12">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-[rgb(0,251,205)] tracking-tight">
+          <div className="text-center mb-8 sm:mb-12">
+            <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold mb-4 sm:mb-6 text-[rgb(0,251,205)] tracking-tight">
               About
             </h1>
-            <div className="w-20 h-1 bg-[rgb(0,251,205)] mx-auto rounded-full"></div>
+            <div className="w-16 sm:w-20 h-1 bg-[rgb(0,251,205)] mx-auto rounded-full"></div>
           </div>
 
           {/* Quote Card */}
-          <div className="bg-gradient-to-r from-[rgb(0,251,205)]/15 to-[rgb(0,251,205)]/8 border-l-4 border-t border-r border-b border-[rgb(0,251,205)]/40 p-8 md:p-10 rounded-2xl mb-12 shadow-lg">
-            <blockquote className="text-2xl md:text-3xl font-bold text-white font-mono text-center tracking-wider uppercase">
+          <div className="bg-gradient-to-r from-[rgb(0,251,205)]/15 to-[rgb(0,251,205)]/8 border-l-4 border-t border-r border-b border-[rgb(0,251,205)]/40 p-4 sm:p-8 md:p-10 rounded-xl sm:rounded-2xl mb-8 sm:mb-12 shadow-lg">
+            <blockquote className="text-lg sm:text-2xl md:text-3xl font-bold text-white font-mono text-center tracking-wide sm:tracking-wider uppercase">
               &ldquo;Showcase your projects, not your loading screens.&rdquo;
             </blockquote>
           </div>
